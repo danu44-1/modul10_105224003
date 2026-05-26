@@ -17,7 +17,7 @@ public class Main {
         daftarFilm.put("F02", film2);
         daftarFilm.put("F03", film3);
 
-        List<String> pesan = new ArrayList<>();
+        List<String> pesan = new ArrayList<>(); // list untuk simpan pemesanannya yang terurut
         
         pesan.add("Dimas#A1#F01");
         pesan.add("Putra#B4#F02");
@@ -34,7 +34,7 @@ public class Main {
             String noKursi = pemesanan[1];
             String kodeFilm = pemesanan[2];
 
-            if (daftarFilm.containsKey(kodeFilm) && !pesanKursi.add(noKursi)) { // jika kode film ada, namun kursi yang dipesan berdasarkan noKursi sudah ada yang memesan sebelumnya (false). maka gagal pesan
+            if (daftarFilm.containsKey(kodeFilm) && !pesanKursi.add(noKursi)) { // jika kode film ada, namun kursi yang dipesan berdasarkan noKursi sudah ada yang memesan sebelumnya (false). jadi gagal pesan
                 System.out.println("Gagal! Kursi sudah dipesan");
             }
             else {
