@@ -39,7 +39,7 @@ public class Main {
         Set<String> peminjaman = new HashSet<>(); // Soal 4 (Masih Gagal)
 
         while (!daftar.isEmpty()) {
-            String pinjam = daftar.removeFirst(); // Ambil dari urutan paling depan
+            String pinjam = daftar.removeFirst(); // dari urutan paling depan
             String[] split = pinjam.split("#");
             
             String idAnggota = split[0];
